@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TopTabSwitch</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tab1_title">主页</string>
+    <string name="tab2_title">信息</string>
+    <string name="tab3_title">设置</string>
+</resources>

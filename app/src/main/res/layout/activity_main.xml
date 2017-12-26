@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true"
+        android:background="#009959"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbarheight"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_tab1"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="@string/tab1_title"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_tab2"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:text="@string/tab2_title"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_tab3"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:text="@string/tab3_title"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation"/>
+
+</LinearLayout>
